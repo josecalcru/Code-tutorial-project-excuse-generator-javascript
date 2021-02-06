@@ -10,9 +10,9 @@ function getRandomInt(max) {
 }
 
 let whoR =who[getRandomInt(who.length)];
-let actionR =who[getRandomInt(action.length)];
-let whatR =who[getRandomInt(what.length)];
-let whenR =who[getRandomInt(when.length)];
+let actionR =action[getRandomInt(action.length)];
+let whatR =what[getRandomInt(what.length)];
+let whenR =when[getRandomInt(when.length)];
 
 document.getElementById('excuse').innerHTML = "<h1>"+ whoR+ " "+ actionR + " "+ whatR + " " + whenR+"</h1>"
 
