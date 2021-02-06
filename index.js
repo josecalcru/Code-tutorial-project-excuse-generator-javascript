@@ -1,20 +1,19 @@
-alert("Hola desde archivo js")
-console.log("Hola console log desde js")
+function Excuse (){
 
-let nombre = "Andres"
+let who = ['The dog','My grandma','His turtle','My bird'];
+let action = ['ate','peed','crushed','broke'];
+let what = ['my homework', 'the keys', 'the car'];
+let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
 
-let estudiantes = ["Pablo", "Esther", "Laura", "Maca"]
-
-let edad = 12
-
-if (edad >= 18){
-
-    console.log("Ya puedes sacar registro")
-}
-else{
-    console.log("Te faltan un par de anhos para manejar")
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
 }
 
-console.log(estudiantes)
+let whoR =who[getRandomInt(who.length)];
+let actionR =who[getRandomInt(action.length)];
+let whatR =who[getRandomInt(what.length)];
+let whenR =who[getRandomInt(when.length)];
 
-console.log("Hola mi nombre es " + nombre)
+document.getElementById('excuse').innerHTML = "<h1>"+ whoR+ " "+ actionR + " "+ whatR + " " + whenR+"</h1>"
+
+}
